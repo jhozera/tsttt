@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 500vh;
+    background: white;
+}
+
+#barra {
+    background:transparent;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.bt1, .bt2, .bt3 {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    border: none;
+    background: none;
+    width: 10%;
+    border: solid 3px #e1173f;
+    background: #e1173f;
+    text-align: center;
+}
+
+#cx {
+    position: relative;
+    color: rgb(0, 0, 0);
+    top: 0;
+    /* background: #f0f0f0; */
+    background: #ffffff;
+    max-width: 360px;
+    width: 100%;
+    border-radius: 15px;
+    height: 550px;
+    padding: 5px;
+    text-align: center;
+    margin-left: 300px;
+    margin-top: 50px;
+    gap: 20px;
+    box-shadow: 2px 2px 4px #9e9d9d, -2px -2px 4px #9e9d9d;
+
+
+
+  }
+  
+.campo1, .campo2  {
+    width: 70%;
+    height: 50px;
+    font-size: 15px;
+    margin-top: 50px;
+    border-radius: 20px;
+    border: solid 3px rgb(167, 7, 7);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .consultar {
+    cursor: pointer;
+    width: 60%;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #e1173f;
+    color: white;
+    margin-top: 75px;
+
+
+ }
+
+ #barra img {
+    width: 12%;
+    translate: -520px;
+ }
+
+ .pr {
+    display: flex;
+    position: absolute;
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%); 
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    filter: brightness(150%); 
+    z-index: -1; 
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+
+#pt2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 80px auto;
+    width: 100%;
+
+}
+
+#bloco1, #bloco2, #bloco3 {
+    background: #f0f0f0;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    margin-top: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+    color: rgb(156, 11, 11);
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    text-align: center;
+
+}
+
+
+
+/* ATIVAR DEPOIS */
+/* #carteiras {
+    display: flex;
+    position: relative;
+    width: 50%;
+    border: solid 3px red;
+    border-radius: 20px;
+    margin-top: 200px;
+    height: 500px;
+    margin-left: 500px;
+}
+ */
