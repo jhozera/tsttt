@@ -10,7 +10,7 @@
     }
   }
   
-  h3 {
+  h3, #barra img{
     animation: animation 5s infinite;
   }
   
@@ -34,7 +34,7 @@
     border-radius: 10px;
   }
   
-  .bt1, .bt2, .bt3 {
+  /* .bt1, .bt2, .bt3 {
     cursor: pointer;
     color: rgb(255, 255, 255);
     font-size: 20px;
@@ -43,12 +43,12 @@
     border: none;
     background: none;
     width: 10%;
-    /* border: solid 3px #e1173f;
-    background: #e1173f; */
+    border: solid 3px #e1173f;
+    background: #e1173f;
     text-align: center;
     translate: 500px;
   }
-  
+   */
   #cx {
     position: relative;
     color: rgb(0, 0, 0);
@@ -93,7 +93,7 @@
   
   #barra img {
     width: 12%;
-    translate: -520px;
+    translate: -550px;
   }
   
   .pr {
@@ -149,7 +149,7 @@
     gap: 30px;
     border: none;
     border-radius: 10px;
-    margin-top: 1000px;
+    margin-top: 100px;
     /* border: solid 4px rgb(187, 187, 187); */
     /* box-shadow: 2px 2px 4px #8f8d8d, -2px -2px 4px #8f8d8d; */
   }
@@ -169,14 +169,37 @@
 
     .pr {
         width: 100%;
+        height: 300px;
     }
 
     #cx {
-        width: 90%; 
+        width: 90%;
+        margin-left: 10px;
+        margin-top: 100px;
+    }
+
+    #barra img {
+      width: 50%;
+      translate: 90px;
+
+    }
+
+    h3 {
+      font-size: 25px;
     }
 
     #bloco1, #bloco2, #bloco3 {
-        width: 90%; 
+        width: 80%; 
+        margin-left: -5px;
+    }
+
+    #carteiras {
+          width: 800px;
+          justify-content: space-between;
+          flex-direction: column;
+          margin-left: 65px;
+
+
     }
 }
 
