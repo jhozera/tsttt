@@ -15,36 +15,31 @@ h3, #barra img {
 }
 
 body {
-  margin: 0;
+    margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    overflow-x: hidden; /* Para evitar rolagem horizontal */
-    overflow-y: hidden; 
 }
 
 #barra {
-  position: fixed;
   position: absolute;
-  background-color: #898787;
+  top: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background:#e43003;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
   padding: 10px 30px;
   display: flex;
   gap: 20px;
-  top: 0;
-  left: 0;
-  right: 0;
   justify-content: center;
   align-items: center;
-  margin: 20px auto;
-  width: fit-content;
-  background: rgba(121, 7, 7, 0.7);
   z-index: 3;
   cursor: pointer;
-
-
 }
+
+
 
 #barra a {
   margin-right: 20px;
@@ -62,7 +57,7 @@ body {
   position: relative;
     background: url('./imagem/banner 1.png') no-repeat center center;
     background-size: cover;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -75,7 +70,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9); /* Ajusta o nível de escurecimento */
+  background: rgba(0, 0, 0, 0.9); 
   z-index: 1;
 }
 
@@ -154,10 +149,10 @@ body {
 
 #pt2 {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  justify-content: space-between;
   margin: 80px auto;
-  width: 100%;
+  width: 70%;
 }
 
 #bloco1, #bloco2, #bloco3 {
@@ -195,123 +190,78 @@ h3 {
   position: relative;
   color: rgb(255, 255, 255);
   border-radius: 50px;
-  box-shadow: 2px 2px 4px #bebcbc, -2px -2px 4px #bebcbc;
+  /* box-shadow: 2px 2px 4px #bebcbc, -2px -2px 4px #bebcbc; */
 }
 
-@media  (min-width: 400px) and (max-width: 757px) {
-  body {
-    width: 90%;
-    height: 300vh;
-  }
-
-  .banner{
+@media (min-width: 400px) and (max-width: 757px) {
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100vh;
-
-   }
-
-  .pr {
-      width: 100%;
-      height: 300px;
+    height: 80vh; 
+  }
+   
+  h2{
+    font-size: 20px;
+    margin-top: -150px;
+    margin-right: 275px;
   }
 
   #cx {
-      width: 90%;
-      margin-left: 25px;
-      margin-top: -100px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -400px;
+    transform: none; 
   }
 
   #barra img {
-      width: 50%;
-      translate: 90px;
-  }
-
-  h3 {
-      font-size: 25px;
+    width: 50%;
   }
 
   #bloco1, #bloco2, #bloco3 {
-      width: 80%;
-      margin-left: -5px;
+    width: 80%;
   }
 
   #carteiras {
-      width: 800px;
-      justify-content: space-between;
-      flex-direction: column;
-      margin-left: 65px;
+    width: 90%;
+    margin: 0 auto;
   }
+
+  #pt2{
+    width: 100%;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+
+
 }
 
 @media (min-width: 800px) and (max-width: 1550px) {
-  body {
-      width: 100%;
-      height: 300vh;
+  .banner {
+    height: 100vh;
   }
 
-
-  .banner{
-    width: 100%;
-   }
-
-  #button {
-      flex-direction: column;
-      align-items: center;
+  #bloco1, #bloco2, #bloco3 {
+    width: 90%;
   }
 
-  .N, .B, .C, .D {
-      width: 80%;
+  #carteiras {
+    width: 80%;
+    margin: 0 auto;
   }
-
-  #container, #caixas {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  #bloco1, #bloco2, #bloco3, .caixa {
-      width: 90%;
-  }
-
-
- 
 }
 
 @media (min-width: 1550px) {
-  body {
-      width: 100%;
-      height: 300vh;
+  .banner {
+    height: 100vh;
   }
 
-
-   .banner{
-    width: 100%;
-   }
-
-  #button {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .N, .B, .C, .D {
-      width: 80%;
-  }
-
-  #container, #caixas {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  #bloco1, #bloco2, #bloco3, .caixa {
-      width: 90%;
-  }
-
-  .N h1, .B h1, .C h1, .D h1 {
-      position: absolute;
-      margin-top: 50px;
-      margin-left: 175px;
+  #bloco1, #bloco2, #bloco3 {
+    width: 30%;
   }
 
   footer p {
-      margin-left: 5px;
+    margin-left: 5px;
   }
 }
