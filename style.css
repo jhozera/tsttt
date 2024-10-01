@@ -10,7 +10,7 @@
   }
 }
 
-h3, #barra img {
+h3, h5{
   animation: animation 5s infinite;
 }
 
@@ -96,8 +96,8 @@ body {
   height: 550px;
   padding: 5px;
   text-align: center;
-  margin-top: -600px;
-  margin-left: 100px;
+  margin-top: -700px;
+  margin-left: 220px;
   gap: 20px;
   /* box-shadow: 2px 2px 4px #9e9d9d, -2px -2px 4px #9e9d9d; */
   cursor: pointer;
@@ -170,9 +170,23 @@ h3 {
   color: rgb(156, 11, 11);
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
-  margin-top: 100px;
+  margin-top: 300px;
   text-align: center;
 }
+
+h2{
+  font-size: 40px;
+}
+
+h5{
+  position: absolute;
+  color: rgb(156, 11, 11);
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -100px;
+}
+
+
 
 #carteiras {
   display: flex;
@@ -192,6 +206,31 @@ h3 {
   border-radius: 50px;
   /* box-shadow: 2px 2px 4px #bebcbc, -2px -2px 4px #bebcbc; */
 }
+
+#button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 80px auto 0;
+  margin-top: 300px;
+  gap: 30px;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.N, .B, .C, .D {
+  position: relative;
+  width: 60%;
+  max-width: 350px;
+  height: 150px;
+  color: rgb(31, 30, 30);
+  border-radius: 20px;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+
+}
+
 
 @media (min-width: 400px) and (max-width: 757px) {
   .banner {
