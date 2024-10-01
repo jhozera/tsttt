@@ -1,3 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  width: 100%; 
+}
+
 @keyframes animation {
   0% {
       transform: translateY(0);
@@ -10,24 +22,26 @@
   }
 }
 
-h3, h5{
+h3, h5 {
   animation: animation 5s infinite;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    width: 100vw;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%; 
+  height: 100%;
+  background: rgb(255, 255, 255);
+  overflow-x: hidden;
 }
 
 #barra {
   position: absolute;
-  top: 20px; 
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  background:#e43003;
+  background: #e43003;
   font-family: Arial, Helvetica, sans-serif;
   border-radius: 25px;
   padding: 10px 30px;
@@ -38,8 +52,6 @@ body {
   z-index: 3;
   cursor: pointer;
 }
-
-
 
 #barra a {
   margin-right: 20px;
@@ -52,16 +64,16 @@ body {
   text-decoration: underline;
 }
 
-
 .banner {
   position: relative;
-    background: url('./imagem/banner 1.png') no-repeat center center;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: url('./imagem/banner 1.png') no-repeat center center;
+  background-size: cover;
+  width: 100%; 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 .banner::before {
@@ -82,8 +94,8 @@ body {
   text-align: center;
   margin-top: -130px;
   margin-left: 300px;
+  
 }
-
 
 #cx {
   position: relative;
@@ -99,7 +111,6 @@ body {
   margin-top: -700px;
   margin-left: 220px;
   gap: 20px;
-  /* box-shadow: 2px 2px 4px #9e9d9d, -2px -2px 4px #9e9d9d; */
   cursor: pointer;
 }
 
@@ -149,7 +160,6 @@ body {
 
 #pt2 {
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-between;
   margin: 80px auto;
   width: 70%;
@@ -174,19 +184,17 @@ h3 {
   text-align: center;
 }
 
-h2{
+h2 {
   font-size: 40px;
 }
 
-h5{
+h5 {
   position: absolute;
   color: rgb(156, 11, 11);
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: -100px;
 }
-
-
 
 #carteiras {
   display: flex;
@@ -204,7 +212,10 @@ h5{
   position: relative;
   color: rgb(255, 255, 255);
   border-radius: 50px;
-  /* box-shadow: 2px 2px 4px #bebcbc, -2px -2px 4px #bebcbc; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+  transition: width 0.3s ease;
+
 }
 
 #button {
@@ -228,11 +239,27 @@ h5{
   border-radius: 20px;
   text-decoration: none;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-
 }
 
+#menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+#barra a {
+  display: inline-block;
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
 
 @media (min-width: 400px) and (max-width: 757px) {
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
   .banner {
     display: flex;
     align-items: center;
@@ -240,54 +267,133 @@ h5{
     width: 100%;
     height: 80vh; 
   }
-   
-  h2{
-    font-size: 20px;
-    margin-top: -150px;
-    margin-right: 275px;
+
+  #cx {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: -100px;
+    transform: none;
+    box-shadow: 2px 2px 4px #9e9d9d, -2px -2px 4px #9e9d9d;
+  }
+
+  #pt2 {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #bloco1, #bloco2, #bloco3 {
+    width: 90%;
+  }
+
+  #menu-toggle {
+    display: block;
+  }
+
+  #barra a {
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #barra.show-menu a {
+    display: block; 
+  }
+
+  #button {
+    text-align: center;
+  }
+
+  h5 {
+    font-size: 25px;
+  }
+
+  #carteiras{
+    width: 900px;
+    flex-direction: column;
+    margin-left: 70px;
+    gap: 20px;
+    
+  }
+
+  #carteiras img {
+    position: relative;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    height: auto; 
+
+  }
+
+}
+
+@media (min-width: 800px) and (max-width: 1550px) {
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh; 
   }
 
   #cx {
     width: 90%;
     margin: 0 auto;
-    margin-top: -400px;
-    transform: none; 
+    margin-top: -100px;
+    transform: none;
+    box-shadow: 2px 2px 4px #9e9d9d, -2px -2px 4px #9e9d9d;
   }
 
-  #barra img {
-    width: 50%;
-  }
-
-  #bloco1, #bloco2, #bloco3 {
-    width: 80%;
-  }
-
-  #carteiras {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  #pt2{
+  #pt2 {
     width: 100%;
     flex-direction: column;
-    margin-left: 10px;
-  }
-
-
-}
-
-@media (min-width: 800px) and (max-width: 1550px) {
-  .banner {
-    height: 100vh;
+    align-items: center;
   }
 
   #bloco1, #bloco2, #bloco3 {
     width: 90%;
   }
 
-  #carteiras {
-    width: 80%;
-    margin: 0 auto;
+  #menu-toggle {
+    display: block;
+  }
+
+  #barra a {
+    display: none;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  #barra.show-menu a {
+    display: block; 
+  }
+
+  #button {
+    text-align: center;
+  }
+
+  h5 {
+    font-size: 25px;
+  }
+
+  #carteiras{
+    width: 900px;
+    flex-direction: column;
+    margin-left: 70px;
+    gap: 20px;
+    
+  }
+
+  #carteiras img {
+    position: relative;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    height: auto; 
+
   }
 }
 
