@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TRC NEGOCIE</title>
     <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="./interface.js" defer></script>
 </head>
 
-<body>
-    <div class="banner"> 
+<body class="animate__animated animate__bounceInLeft"></body>
+    <div class="banner">
         <div class="banner-content">
-            <!-- <h2>TRC Taborda</h2>
-            <p style="font-size: 40px;">Sua liberbade financeira.</p> -->
             <nav id="barra" class="menu-toggle">
                 <div id="menu-toggle">☰</div>
                 <a class="bt1" href="#trc">TRC</a>
@@ -21,28 +22,21 @@
               </nav>
         </div>
     </div>
-    <!-- <nav id="barra" class="menu-toggle">
-        <div id="menu-toggle">☰</div>
-        <a class="bt1" href="#trc">TRC</a>
-        <a class="bt2" href="#parceiros">Parceiros</a>
-        <a class="bt3" href="#contato">Contato</a>
-      </nav> -->
     <form id="cx">
         <h1 style="font-size: 22px; font-family: Arial, Helvetica, sans-serif;">Consulte suas dívidas de forma gratuita e negocie as melhores condições para você.</h1>
         <input class="campo1" type="number" name="cpf" placeholder="Digite seu documento (CPF/CNPJ)"><br>
         <input class="campo2" type="text" placeholder="Digite seu Nome Completo"><br>
         <br><input class="consultar" type="submit" value="Consultar">
     </form>
-    <!-- <h3>Liberdade financeira com a TRC TABORDA</h3> -->
     <div id="button">
         <h5>Nossas soluções para você</h5>
         <a class="B" href="https://api.whatsapp.com/send?phone=554130220414">
             <p><strong>2ª Via de Boleto</strong></p>
-            <img src="./imagem/lift_to_talk.webp" alt="primeiro"  style="width: 15%; margin-left: 20px; margin-top: 20px;">>
+            <img src="./imagem/lift_to_talk.webp" alt="primeiro"  style="width: 15%; margin-left: 20px; margin-top: 20px;">
         </a>
         <a class="C" href="https://api.whatsapp.com/send?phone=554130220414">
             <p><strong>Falar com nossos especialistas</strong></p>
-            <img src="./imagem/headset_mic.webp" alt="primeiro"  style="width: 15%; margin-left: 20px; margin-top: 20px;">>
+            <img src="./imagem/headset_mic.webp" alt="primeiro"  style="width: 15%; margin-left: 20px; margin-top: 20px;">
         </a>
         <a class="D" href="https://api.whatsapp.com/send?phone=554130220414">
             <p><strong>Antecipação</strong></p>
@@ -70,15 +64,19 @@
         </div>
     </div>
     <div id="carteiras">
-        <img src="./imagem/ATIVOS.png" alt="ativos" style="width: 30%; height:10%;">
-        <img src="./imagem/BERLANDA.png" alt="berlanda" style="width: 30%; height:10%;">
-        <img src="./imagem/CREDI.png" alt="credi" style="width: 30%; height:10%;">
-        <img src="./imagem/CREDIPAR.png" alt="credipar" style="width: 30%; height:10%;">
-        <img src="./imagem/DIRECIONAL.png" alt="direcional" style="width: 30%; height:10%;">
-        <img src="./imagem/DIV.png" alt="divzero" style="width: 30%; height:10%;">
-        <img src="./imagem/STONE.png" alt="stone" style="width: 30%; height:10%;">
-        <img src="./imagem/TENDA.png" alt="tenda" style="width: 30%; height:10%;">
-        <img src="./imagem/ZEMA.png" alt="zema" style="width: 30%; height:10%;">
+        <div class="slide-container">
+            <img class="car" src="./imagem/ATIVOS.png" alt="ativos">
+            <img class="car" src="./imagem/BERLANDA.png" alt="berlanda">
+            <img class="car" src="./imagem/CREDI.png" alt="credi">
+            <img class="car" src="./imagem/CREDIPAR.png" alt="credipar">
+            <img class="car" src="./imagem/DIRECIONAL.png" alt="direcional" style="translate: -55px;">
+            <img class="car" src="./imagem/DIV.png" alt="divzero" style="translate: -70px;">
+            <img class="car" src="./imagem/STONE.png" alt="stone"  style="translate: -85px;">
+            <img class="car" src="./imagem/TENDA.png" alt="tenda"  style="translate: -110px;">
+            <img class="car" src="./imagem/ZEMA.png" alt="zema"  style="translate: -140px;">
+        </div>
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
     </div>
 </body>
 </html>
