@@ -2,14 +2,6 @@
   box-sizing: border-box;
 }
 
-
-body, html {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; 
-  width: 100%; 
-}
-
 @keyframes animation {
   0% {
       transform: translateY(0);
@@ -22,19 +14,26 @@ body, html {
   }
 }
 
+.animate__animated.animate__bounceInLeft {
+  --animate-duration: 2s;
+}
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.5s;
+}
+
 h3, h5 {
   animation: animation 5s infinite;
 }
 
-body {
+body, html {
   margin: 0;
   padding: 0;
+  overflow-x: hidden; 
   width: 100%; 
-  height: 100%;
-  background: rgb(255, 255, 255);
-  overflow-x: hidden;
 }
-
 #barra {
   position: absolute;
   top: 20px;
@@ -66,7 +65,7 @@ body {
 
 .banner {
   position: relative;
-  background-image: url('./imagem/Home1.png');
+  background-image: url('./imagem/Home10.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -74,6 +73,11 @@ body {
   height: 100vh; /* Ocupará toda a altura da viewport */
   display: flex;
   margin-left: 550px;
+}
+
+.icon {
+  width: 20%;
+  translate: -350px;
 }
 
 /* .banner::before {
@@ -197,7 +201,7 @@ h5 {
   margin-top: -100px;
 }
 
-#carteiras {
+/* #carteiras {
   display: flex;
   width: 1100px;
   flex-wrap: wrap;
@@ -207,17 +211,13 @@ h5 {
   border: none;
   border-radius: 10px;
   margin-top: 100px;
-}
+} */
 
-#carteiras img {
-  position: relative;
-  color: rgb(255, 255, 255);
-  border-radius: 50px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
-  height: auto;
-  transition: width 0.3s ease;
+/* #carteiras img {
+  
+    vertical-align: middle;
 
-}
+} */
 
 #button {
   display: flex;
@@ -229,6 +229,8 @@ h5 {
   border: none;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
+  transition: all 0.6s ease-out;
+
 }
 
 .N, .B, .C, .D {
@@ -253,6 +255,61 @@ h5 {
   margin: 0 15px;
   text-decoration: none;
 }
+
+
+.slide-container img {
+  border: none;
+  border-radius: 50px;
+  width: 60%;
+}
+
+
+#carteiras {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.car {
+  width: 20%; /* Ajuste o tamanho da imagem no carrossel */
+  height: auto;
+  border-radius: 10px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  padding: 16px;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.prev, .next {
+  border-radius: 50px;
+  background-color: #e43003;
+}
+
+
+
 
 @media (min-width: 400px) and (max-width: 799px) {
 
@@ -310,21 +367,12 @@ h5 {
     font-size: 25px;
   }
 
-  #carteiras{
-    width: 900px;
-    flex-direction: column;
-    margin-left: 70px;
-    gap: 20px;
-    
-  }
-
-  #carteiras img {
-    position: relative;
-    color: rgb(255, 255, 255);
+  .slide-container img {
+    border: none;
     border-radius: 50px;
-    height: auto; 
-
+    width: 100%;
   }
+  
 
 }
 
@@ -400,16 +448,3 @@ h5 {
   }
 }
 
-@media (min-width: 1550px) {
-  .banner {
-    height: 100vh;
-  }
-
-  #bloco1, #bloco2, #bloco3 {
-    width: 30%;
-  }
-
-  footer p {
-    margin-left: 5px;
-  }
-}
