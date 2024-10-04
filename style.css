@@ -18,7 +18,6 @@
   --animate-duration: 2s;
 }
 
-/* This changes all the animations globally */
 :root {
   --animate-duration: 800ms;
   --animate-delay: 0.5s;
@@ -38,7 +37,7 @@ body, html {
   position: absolute;
   top: 20px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-255%);
   color: white;
   background: #e43003;
   font-family: Arial, Helvetica, sans-serif;
@@ -65,7 +64,7 @@ body, html {
 
 .banner {
   position: relative;
-  /* background-image: url('./imagem/Home10.png'); */
+  background-image: url('./imagem/aaaaa.png');
   background-position: center 15vh; /* move a imagem para baixo até o meio */
   background-repeat: no-repeat;
   background-size: cover;
@@ -111,7 +110,7 @@ body, html {
   height: 550px;
   padding: 5px;
   text-align: center;
-  transform: translateY(-1550px);
+  transform: translateY(-1480px);
   margin-left: 220px;
   gap: 20px;
   cursor: pointer;
@@ -323,7 +322,7 @@ h5 {
 }
 
 .banner .ti {
-  margin-top: 320px;
+  margin-top: 85px;
   font-family: sans-serif;
   font-size: 50px;
   
@@ -365,7 +364,7 @@ h7{
     height: 80vh;
     background-size: 100% 100%;
     background-position: center 18vh;
-    /* background-image: url('./imagem/ne');  */
+    background-image: url('./imagem/aaaaa.png'); 
     translate: -775px;
   }
      
@@ -405,6 +404,12 @@ h7{
 
   #menu-toggle {
     display: block;
+  }
+
+  #barra {
+  transform: translateX(-52%);
+  color: white;
+  background: #e43003;
   }
 
   #barra a {
