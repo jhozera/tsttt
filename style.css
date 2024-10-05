@@ -4,13 +4,13 @@
 
 @keyframes animation {
   0% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   50% {
-      transform: translateY(15px);
+    transform: translateY(15px);
   }
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 }
 
@@ -23,16 +23,19 @@
   --animate-delay: 0.5s;
 }
 
-h3, h5 {
+h3,
+h5 {
   animation: animation 5s infinite;
 }
 
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
-  overflow-x: hidden; 
-  width: 100%; 
+  overflow-x: hidden;
+  width: 100%;
 }
+
 #barra {
   position: absolute;
   top: 20px;
@@ -65,11 +68,11 @@ body, html {
 .banner {
   position: relative;
   background-image: url('./imagem/aaaaa.png');
-  background-position: center 15vh; /* move a imagem para baixo até o meio */
+  background-position: center 15vh; 
   background-repeat: no-repeat;
   background-size: cover;
-  width: 60%; /* Cobrirá toda a largura */
-  height: 100vh; /* Ocupará toda a altura da viewport */
+  width: 60%; 
+  height: 100vh; 
   display: flex;
   margin-left: 550px;
 }
@@ -78,26 +81,6 @@ body, html {
   width: 20%;
   translate: -350px;
 }
-
-/* .banner::before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9); 
-  z-index: 1;
-}
-
-.banner-content {
-  font-family: Arial, Helvetica, sans-serif;
-  position: relative;
-  z-index: 2;
-  color: #fff;
-  text-align: center;
-  margin-top: -130px;
-  margin-left: 300px;
-} */
 
 #cx {
   position: relative;
@@ -115,12 +98,10 @@ body, html {
   gap: 20px;
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.295);
-
 }
 
-
-
-.campo1, .campo2 {
+.campo1,
+.campo2 {
   width: 70%;
   height: 50px;
   font-size: 15px;
@@ -173,11 +154,14 @@ body, html {
   margin: 80px auto;
   width: 50%;
   height: 500px;
+  margin-top: 1000px;
   border-radius: 30px;
   background: linear-gradient(to top, #B81570 10%, #e43003 50%, #e43003 90%);
 }
 
-#bloco1, #bloco2, #bloco3 {
+#bloco1,
+#bloco2,
+#bloco3 {
   background: #ffffff;
   width: 20%;
   text-align: center;
@@ -208,24 +192,6 @@ h5 {
   margin-top: -200px;
 }
 
-/* #carteiras {
-  display: flex;
-  width: 1100px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 80px auto 0;
-  gap: 30px;
-  border: none;
-  border-radius: 10px;
-  margin-top: 100px;
-} */
-
-/* #carteiras img {
-  
-    vertical-align: middle;
-
-} */
-
 #button {
   display: flex;
   flex-wrap: wrap;
@@ -235,21 +201,29 @@ h5 {
   gap: 30px;
   border: none;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   transition: all 0.6s ease-out;
-
+  text-align: center;
 }
 
-.N, .B, .C, .D {
+.N,
+.B,
+.C,
+.D {
   position: relative;
   width: 60%;
-  max-width: 350px;
-  height: 150px;
+  max-width: 400px;
+  height: 550px;
   color: rgb(31, 30, 30);
   border-radius: 20px;
   text-decoration: none;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
+
+.sty{
+  border-radius: 20px;
+}
+
 
 #menu-toggle {
   display: none;
@@ -263,13 +237,11 @@ h5 {
   text-decoration: none;
 }
 
-
 .slide-container img {
   border: none;
   border-radius: 50px;
   width: 60%;
 }
-
 
 #carteiras {
   position: relative;
@@ -286,12 +258,13 @@ h5 {
 }
 
 .car {
-  width: 20%; 
+  width: 20%;
   height: auto;
   border-radius: 10px;
 }
 
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   font-size: 24px;
@@ -310,7 +283,8 @@ h5 {
   right: 0;
 }
 
-.prev, .next {
+.prev,
+.next {
   border-radius: 50px;
   background-color: #e43003;
 }
@@ -325,7 +299,6 @@ h5 {
   margin-top: 85px;
   font-family: sans-serif;
   font-size: 50px;
-  
 }
 
 .ti span {
@@ -340,7 +313,7 @@ svg {
   padding: 0;
 }
 
-h7{
+h7 {
   position: absolute;
   color: white;
   margin-top: 320px;
@@ -455,7 +428,7 @@ h7{
     width: 875px; 
     height: 70vh;
     background-size: 100% 100%;
-    background-image: url('./imagem/Home10.png'); 
+    background-image: url('./imagem/aaaaa.png'); 
     translate: -775px;
   }
 
@@ -512,4 +485,3 @@ h7{
 
   }
 }
-
