@@ -90,17 +90,25 @@
     </div>
     <div id="carteiras">
         <h9><strong>Nossos parceiros</strong></h9>
-        <div class="ativos"></div>
-        <div class="berlanda"></div>
-        <div class="credi"></div>
-        <div class="credipar"></div>
-        <div class="stone"></div>
-        <div class="tenda"></div>
-        <div class="zema"></div>
+        <div id="car-button">
+        <div id="financeira"   class="container-car">
+            <div class="ativos"></div>
+            <div class="credi" ></div>
+            <div class="credipar"></div>
+            <div class="stone"></div>
+        </div>
+        <div id="construtora" class="container-car">
+            <div class="tenda"></div>
+        </div>
+        <div id="varejo" class="container-car">
+             <div class="zema"></div>
+             <div class="berlanda"></div>
+        </div>
+    </div>
     <div id="button-car">
-        <button class="financeira">Financeiras</button>
-        <button class="construtora">Construtora</button>
-        <button class="varejo">Varejo</button>
+        <button class="financeira" onclick="showContent('financeira')">Financeiras</button>
+        <button class="construtora" onclick="showContent('construtora')" >Construtora</button>
+        <button class="varejo" onclick="showContent('varejo')">Varejo</button>
     </div>
     </div> 
 </body>
