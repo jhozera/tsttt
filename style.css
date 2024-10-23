@@ -309,23 +309,35 @@ h5 {
 
 #carteiras {
   display: flex;
-  position: relative;
   background: #e43003;
   width: 100%;
-  height: 500px;
+  height: 300px;
   border-radius: 20px;
   max-width: 1000px;
   margin: auto;
-  border:solid 3px red;
+  border: solid 3px red;
+  position: relative; 
+  transition: height 0.3s;
+  overflow: hidden;
 }
 
+#financeira {
+  height: 400px; 
+}
+#construtora {
+  height: 400px; 
+}
+#varejo {
+  height: 400px; 
+}
+
+
 #button-car {
+  position: absolute;
+  top: 100px;
+  left: 260px; 
   display: flex;
-  width: 200px;
   gap: 50px;
-  flex-direction: column;
-  margin-top: 150px;
-  margin-left: -270px;
 }
 
 .financeira, .construtora, .varejo {
@@ -334,10 +346,55 @@ h5 {
   background: white;
   border-radius: 40px;
   border: none;
-  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
-  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  -webkit-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+  clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+}
 
-  }
+.container-car {
+  display: flex;
+  display: none;
+  margin-top: 20px;
+  position: absolute;
+  right: 50px;
+  top: 150px;
+  gap: 20px;
+}
+
+.active {
+  display: flex;
+  } 
+
+.ativos, .credi, .credipar, .stone {
+  border: solid 3px white;
+  width: 175px;
+  height: 200px;
+  background: white;
+  border-radius: 20px;
+  margin-left: 50px;
+  
+}
+
+
+
+.berlanda, .zema{
+  border: solid 3px white;
+  width: 175px;
+  height: 200px;
+  background: white;
+  border-radius: 20px;
+  margin-left: -450px;
+}
+
+
+.tenda{
+  border: solid 3px white;
+  width: 175px;
+  height: 200px;
+  background: white;
+  border-radius: 20px;
+  margin-left: -520px;
+}
+
 
 
 h9{
@@ -345,7 +402,7 @@ h9{
   font-family: sans-serif;
   font-size: 35px;
   text-align: center;
-  margin-left: 70px;
+  margin-left: 350px;
   margin-top: 40px;
 
 }
@@ -571,6 +628,61 @@ h8{
     transform: translateY(-600px);
   }
 
+#carteiras{
+  transition: height 0.3s;
+  overflow: hidden;
+  height: 400px;
+
+}
+
+  .financeira, .varejo, .construtora{
+    color: black;
+    margin-left: 70px;
+  }
+
+  
+  .container-car {
+    display: flex;
+    display: none;
+    position: absolute;
+    top: 400px;
+    left: 130px;
+    gap: 20px;
+    flex-direction: column;
+  }
+  
+  #button-car{
+    flex-direction: column;
+    top: 100px;
+    left: 50px; 
+  }
+
+  .ativos, .credi, .credipar, .stone{
+    margin-left: -5px;
+  }
+
+  .tenda{
+    margin-left: -5px;
+  }
+
+  .berlanda, .zema{
+    margin-left: -5px;
+  }
+
+  h9{
+    margin-left: 70px;
+  }
+
+  #financeira {
+    height: 1400px; /* Altura específica para Financeiras */
+ }
+  #construtora {
+    height: 700px; /* Altura específica para Construtora */
+ }
+  #varejo {
+    height: 950px; /* Altura específica para Varejo */
+  }
+
 }
 
 @media screen and (min-width: 501px) and (max-width: 1024px) {
@@ -734,7 +846,6 @@ h8{
 
 
   #cx{
-    width: 100%;
      margin-top: -140px;
   }
 
