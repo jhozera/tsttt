@@ -40,6 +40,23 @@ window.addEventListener('scroll', () => {
 
 
 
+function showContent(contentID) {
+  const sections = document.querySelectorAll('.container-car');
+  const carteirasDiv = document.getElementById('carteiras');
+  
+
+  sections.forEach(section => {
+      section.style.display = 'none'; 
+  });
+
+  const selectedSection = document.getElementById(contentID);
+  if (selectedSection) {
+      selectedSection.style.display = 'flex'; 
+      const contentHeight = selectedSection.scrollHeight; 
+      carteirasDiv.style.height = contentHeight + 'px'; 
+  }
+}
+
 
 
 
