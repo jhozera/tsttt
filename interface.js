@@ -10,23 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-// slide
-
-// let currentSlide = 0;
-// const slides = document.querySelectorAll('.car');
-// const totalSlides = slides.length;
-
-// function changeSlide(direction) {
-//   if (direction === 1 && currentSlide < totalSlides - 1) {
-//     currentSlide++;
-//   } else if (direction === -1 && currentSlide > 0) {
-//     currentSlide--;
-//   }
-//   const offset = -currentSlide *790 / totalSlides;
-//   document.querySelector('.slide-container').style.transform = `translateX(${offset}%)`;
-// }
-
-// barra pc
 
 window.addEventListener('scroll', () => {
   const navbar = document.getElementById('desktop');
@@ -56,6 +39,26 @@ function showContent(contentID) {
       carteirasDiv.style.height = contentHeight + 'px'; 
   }
 }
+
+
+function showContente(contentID) {
+  const sections = document.querySelectorAll('button-pt');
+  const carteirasDiv = document.getElementById('button-ft');
+  
+
+  sections.forEach(section => {
+      section.style.display = 'none'; 
+  });
+
+  const selectedSection = document.getElementById(contentID);
+  if (selectedSection) {
+      selectedSection.style.display = 'flex'; 
+      const contentHeight = selectedSection.scrollHeight; 
+      carteirasDiv.style.height = contentHeight + 'px'; 
+  }
+}
+
+
 
 
 
