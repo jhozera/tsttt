@@ -257,6 +257,49 @@ h5 {
   border-radius: 20px;
 }
 
+#caixa-pr{
+  display: flex;
+  border-radius: 30px;
+  margin-top: 200px;
+  background: linear-gradient(to top, #500606 10%, #7e0404 50%, #7e0404 90%);
+  height: 50vh;
+  justify-content: center;
+}
+
+.ca-ti{
+  color: #ffffff;
+  padding: 80px;
+  font-size: 35px;
+  font-family: sans-serif;
+  
+}
+
+
+/* .img1{
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+}
+ */
+
+.button-caixa{
+  width: 20%;
+  background: #ec1c24;
+  color: white;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  border: none;
+  padding: 10px;
+  margin: 10px; 
+  box-shadow: 2px 2px 4px #b91004, -2px -2px 4px #b91004;
+  height: 80px;
+  margin-left: -700px;
+  transform: translateY(380px);
+}
 
 #menu-toggle {
   display: none;
@@ -273,13 +316,13 @@ h5 {
 
 #carteiras {
   display: flex;
-  background: #e43003;
+  background: linear-gradient(to top, #500606 10%, #be0707 50%, #b90808 90%);
   width: 100%;
   height: 300px;
   border-radius: 20px;
   max-width: 1000px;
   margin: auto;
-  border: solid 3px red;
+  /* border: solid 3px red; */
   position: relative; 
   transition: height 0.3s;
   overflow: hidden;
@@ -305,13 +348,15 @@ h5 {
 }
 
 .financeira, .construtora, .varejo {
+  opacity: 0.9;
+  height: 50px;
   font-size: 25px;
   font-family: sans-serif;
   background: white;
   border-radius: 40px;
   border: none;
-  -webkit-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
-  clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+  /* -webkit-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
+  clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%); */
 }
 
 .container-car {
@@ -370,7 +415,7 @@ h5 {
 
 
 
-h9{
+.carr-ti{
   color: white;
   font-family: sans-serif;
   font-size: 35px;
@@ -414,7 +459,7 @@ svg {
 }
 
 
-h7 {
+h6 {
   position: absolute;
   color: white;
   margin-top: 320px;
@@ -424,11 +469,11 @@ h7 {
   transform: translateY(-350px);
 }
 
-h8{
+/* h8{
   font-size: 35px;
   font-family: Arial, Helvetica, sans-serif;
   color: white;
-}
+} */
 
 
 
@@ -500,55 +545,58 @@ h8{
 
 
 .button-pt {
-  font-family: sans-serif;
-  font-size: 20px;
   color: white;
   background: rgb(70, 65, 65);
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   width: 800px;
-  height: 80px;
   margin-top: 20px;
   text-align: left;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.txt-button {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.txt-bu-ti {
+  font-size: 20px;
+  margin: 0;
 }
 
 #button-ft {
   display: flex;
-  overflow: hidden;
-  background-color: #312c2c;
-  gap: 20px;
-  justify-content:center;
   flex-direction: column;
-  align-items: center; 
-  height: 100vh;
-  margin-top: 100px; 
+  align-items: center;
+  background-color: #312c2c;
+  margin-top: 100px;
+  height: 97vh;
   padding: 20px;
-  flex-wrap: wrap;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;    
+  transition: height 0.
 }
 
-
-
-.button-ti{
-  position: absolute;
+.button-ti {
   padding: 25px;
   color: white;
   font-size: 35px;
   font-family: sans-serif;
-  margin-top: -900px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.button-pt{
-  height: 100px;
-}
-
-
-#bt2, #bt3, #bt4, #bt5, #bt6{
-  height: 1000px;
-}
-
-.bt2, .bt3, .bt4, .bt5, .bt6{
+.bt-content {
   display: none;
+  padding-top: 10px;
 }
+/* 
+footer{
+  background: #940c0c;
+  height: 50vh;
+} */
 
 @media screen and (max-width: 500px) {
 
@@ -681,8 +729,9 @@ h8{
     width: 100%;
   }
   
-  h7{
+  h6{
     transform: translateY(-600px);
+    margin-top: 400px;
   }
 
 #carteiras{
@@ -734,7 +783,7 @@ h8{
     margin-left: -5px;
   }
 
-  h9{
+  .carr-ti{
     margin-left: 70px;
   }
 
@@ -747,26 +796,45 @@ h8{
   #varejo {
     height: 950px; 
   }
-
-  #button-ft{
-    height: 120vh;
-  }
-
-  .button-ti{
-    margin-top: -800px;
-  }
-
+ 
   .button-pt{
-    width: 350px;
-    height: 80px;
+    width: 85%;
   }
-
-  #bt2, #bt3, #bt4, #bt5, #bt6{
-    height: 1100px;
+ 
+  #caixa-pr{
+    display: flex;
+    border-radius: 20px;
+    margin-top: 200px;
+    /* background: #d60e0e; */
+    height: 100vh;
+    flex-direction: column;
   }
   
 
 
+  .ca-ti{
+    color: #ffffff;
+    padding: 40px;
+    font-size: 25px;
+    font-family: sans-serif;
+  }
+  
+  
+ 
+/* .img1{
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+} */
+  
+   .button-caixa{
+    font-size: 28px;
+    width:80%;
+    transform: translateX(750px);
+   }
+
+  
 }
 
 @media screen and (min-width: 501px) and (max-width: 1024px) {
@@ -919,11 +987,7 @@ h8{
     width: 100%;
   }
   
-  h7{
-    transform: translateY(-600px);
-  }
-
-
+ 
 }
 
 @media screen and (min-width: 1025px) and (max-width: 2500px) {
@@ -952,3 +1016,6 @@ h8{
   }
 
 }
+
+
+
