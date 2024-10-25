@@ -41,20 +41,17 @@ function showContent(contentID) {
 }
 
 
-function showContente(contentID) {
-  const sections = document.querySelectorAll('button-pt');
-  const carteirasDiv = document.getElementById('button-ft');
-  
+function showContente(id) {
+  const content = document.getElementById(id);
+  const isVisible = content.style.display === "block";
 
-  sections.forEach(section => {
-      section.style.display = 'none'; 
-  });
+  const allContents = document.querySelectorAll('.bt-content');
+  allContents.forEach(el => el.style.display = 'none');
 
-  const selectedSection = document.getElementById(contentID);
-  if (selectedSection) {
-      selectedSection.style.display = 'flex'; 
-      const contentHeight = selectedSection.scrollHeight; 
-      carteirasDiv.style.height = contentHeight + 'px'; 
+  if (!isVisible) {
+      content.style.display = "block";
+  } else {
+      content.style.display = "none";
   }
 }
 
