@@ -23,22 +23,22 @@ window.addEventListener('scroll', () => {
 
 
 
-function showContent(contentID) {
-  const sections = document.querySelectorAll('.container-car');
-  const carteirasDiv = document.getElementById('carteiras');
+// function showContent(contentID) {
+//   const sections = document.querySelectorAll('.container-car');
+//   const carteirasDiv = document.getElementById('carteiras');
   
 
-  sections.forEach(section => {
-      section.style.display = 'none'; 
-  });
+//   sections.forEach(section => {
+//       section.style.display = 'none'; 
+//   });
 
-  const selectedSection = document.getElementById(contentID);
-  if (selectedSection) {
-      selectedSection.style.display = 'flex'; 
-      const contentHeight = selectedSection.scrollHeight; 
-      carteirasDiv.style.height = contentHeight + 'px'; 
-  }
-}
+//   const selectedSection = document.getElementById(contentID);
+//   if (selectedSection) {
+//       selectedSection.style.display = 'flex'; 
+//       const contentHeight = selectedSection.scrollHeight; 
+//       carteirasDiv.style.height = contentHeight + 'px'; 
+//   }
+// }
 
 
 function showContente(id) {
@@ -56,7 +56,11 @@ function showContente(id) {
 }
 
 
-
-
+function scrollToSection(id) {
+  const element = document.getElementById(id);
+  if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
 
 
