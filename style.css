@@ -301,6 +301,21 @@ h5 {
   transform: translateY(380px);
 }
 
+
+#caixa-pt{
+  display: flex;
+  justify-content: flex-start;
+  background: linear-gradient(to top, #230455 10%, #420375 50%, #5807b6 90%);
+  height: 50vh;
+  /* border-radius: 25px; */
+  margin-top: 200px;
+}
+/* 
+.img2 {
+ margin-left: 20000px;
+} */
+
+
 #menu-toggle {
   display: none;
   cursor: pointer;
@@ -315,123 +330,66 @@ h5 {
 
 
 #carteiras {
-  display: flex;
-  background: linear-gradient(to top, #500606 10%, #be0707 50%, #b90808 90%);
-  width: 100%;
-  height: 300px;
-  border-radius: 20px;
-  max-width: 1000px;
-  margin: auto;
-  /* border: solid 3px red; */
-  position: relative; 
-  transition: height 0.3s;
-  overflow: hidden;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-#financeira {
-  height: 700px; 
-}
-#construtora {
-  height: 400px; 
-}
-#varejo {
-  height: 400px; 
-}
-
-
-#button-car {
-  position: absolute;
-  top: 100px;
-  left: 260px; 
-  display: flex;
-  gap: 50px;
-}
-
-.financeira, .construtora, .varejo {
-  opacity: 0.9;
-  height: 50px;
-  font-size: 25px;
+.carr-ti {
+  display: block;
+  color: #333;
   font-family: sans-serif;
-  background: white;
-  border-radius: 40px;
-  border: none;
-  /* -webkit-clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%);
-  clip-path: polygon(0 0, 0 0, 100% 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 15px 100%, 0 100%); */
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#par-btn {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: end; */
+  align-items: center;
+  gap: 20px;
+  width: 100%;
 }
 
 .container-car {
   display: flex;
-  display: none;
+  justify-content: space-around; 
   margin-top: 20px;
-  position: absolute;
-  right: 50px;
-  top: 150px;
   gap: 20px;
 }
 
-.active {
+.ativos, .credi, .credipar, .stone, .div, .tenda, .direcional, .zema, .berlanda, .berlanda, .zema, .tenda, .direcional, .bradesco  {
   display: flex;
-  } 
-
-.ativos, .credi, .credipar, .stone {
+  justify-content: center;
+  align-items: center; 
   border: solid 3px white;
   width: 175px;
-  height: 200px;
+  height: 150px;
   background: white;
   border-radius: 20px;
-  margin-left: 50px;
-  
+  transition: transform 0.3s; 
 }
 
-.div{
-  border: solid 3px white;
-  width: 175px;
-  height: 200px;
-  background: white;
-  border-radius: 20px;
-  transform: translatey(300px);
-  margin-left: -200px;
-
+.container-car img {
+  width: 90%;
+  margin: auto; 
+  margin-top: 15px;
 }
 
-.berlanda, .zema{
-  border: solid 3px white;
-  width: 175px;
-  height: 200px;
-  background: white;
-  border-radius: 20px;
-  margin-left: -450px;
+.container-car div:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
 }
 
 
-.tenda, .direcional{
-  border: solid 3px white;
-  width: 175px;
-  height: 200px;
-  background: white;
-  border-radius: 20px;
-  margin-left: -520px;
-}
-
-
-
-.carr-ti{
-  color: white;
-  font-family: sans-serif;
-  font-size: 35px;
-  text-align: center;
-  margin-left: 350px;
-  margin-top: 40px;
-
-}
-
-
-
-.car {
+/* .car {
   width: 20%;
   height: auto;
   border-radius: 10px;
-}
+} */
 
 
 .banner {
@@ -572,11 +530,13 @@ h6 {
   align-items: center;
   background-color: #312c2c;
   margin-top: 100px;
-  height: 97vh;
+  height: auto;
+  width: 100%;
   padding: 20px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;    
-  transition: height 0.
+  /* border-top-left-radius: 20px;
+  border-top-right-radius: 20px;     */
+  transition: height 0.5;
+  margin: 0;
 }
 
 .button-ti {
@@ -592,11 +552,23 @@ h6 {
   display: none;
   padding-top: 10px;
 }
-/* 
+
+
 footer{
-  background: #940c0c;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #f2f2f2;
   height: 50vh;
-} */
+  gap: 20px;
+}
+
+.img10{
+  margin-left: 950px;
+  margin-top: 30px;
+  width: 10%;
+  height: 20%;
+}
 
 @media screen and (max-width: 500px) {
 
@@ -718,6 +690,7 @@ footer{
     margin-top: 225px;
   }
 
+
   h5 {
     margin-top: -80px;
     font-size: 25px;
@@ -734,69 +707,6 @@ footer{
     margin-top: 400px;
   }
 
-#carteiras{
-  transition: height 0.3s;
-  overflow: hidden;
-  height: 400px;
-
-}
-
-  .financeira, .varejo, .construtora{
-    color: black;
-    margin-left: 70px;
-  }
-
-  
-  .container-car {
-    display: flex;
-    display: none;
-    position: absolute;
-    top: 400px;
-    left: 130px;
-    gap: 20px;
-    flex-direction: column;
-  }
-  
-  #button-car{
-    flex-direction: column;
-    top: 100px;
-    left: 50px; 
-  }
-
-  .ativos, .credi, .credipar, .stone{
-    margin-left: -5px;
-  }
-
-
-
-.div{
-  margin-top: -300px;
-  margin-left: -5px;
-}
-
-
-  .tenda, .direcional{
-    margin-left: -5px;
-  }
-
-  .berlanda, .zema{
-    margin-left: -5px;
-  }
-
-  .carr-ti{
-    margin-left: 70px;
-  }
-
-  #financeira {
-    height: 1700px; 
- }
-  #construtora {
-    height: 900px; 
- }
-  #varejo {
-    height: 950px; 
-  }
- 
   .button-pt{
     width: 85%;
   }
@@ -821,20 +731,63 @@ footer{
   
   
  
-/* .img1{
-  width: 100%;
-  max-width: 600px;
-  height: auto;
-  display: block;
-} */
-  
    .button-caixa{
     font-size: 28px;
     width:80%;
     transform: translateX(750px);
    }
 
-  
+  #caixa-pt{
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .img2{
+    margin-left:-20px;
+    width: 65%;
+  }
+   
+  .img3{
+    width: 59%;
+  }
+
+  .img10{
+    width: 30%;
+    height: 15%;
+    margin-left: 145px;
+  }
+   
+
+  #par-btn {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px;
+    width: auto;
+    padding: 20px;
+}
+
+.container-car {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ativos, .credi, .credipar, .stone, .div, .tenda, .direcional, .zema, .berlanda, .bradesco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px white;
+    width: calc(50% - 10px);
+    height: 150px;
+    background: white;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+
 }
 
 @media screen and (min-width: 501px) and (max-width: 1024px) {
