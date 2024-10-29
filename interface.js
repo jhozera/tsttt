@@ -23,23 +23,26 @@ window.addEventListener('scroll', () => {
 
 
 
-// function showContent(contentID) {
-//   const sections = document.querySelectorAll('.container-car');
-//   const carteirasDiv = document.getElementById('carteiras');
+function showContent(contentID) {
+  const sections = document.querySelectorAll('.form-container');
+  const carteirasDiv = document.getElementById('form-box');
   
 
-//   sections.forEach(section => {
-//       section.style.display = 'none'; 
-//   });
+  sections.forEach(section => {
+      section.style.display = 'none'; 
+  });
 
-//   const selectedSection = document.getElementById(contentID);
-//   if (selectedSection) {
-//       selectedSection.style.display = 'flex'; 
-//       const contentHeight = selectedSection.scrollHeight; 
-//       carteirasDiv.style.height = contentHeight + 'px'; 
-//   }
-// }
+  const selectedSection = document.getElementById(contentID);
+  if (selectedSection) {
+      selectedSection.style.display = 'flex'; 
+      const contentHeight = selectedSection.scrollHeight; 
+      carteirasDiv.style.height = contentHeight + 'px'; 
+  }
+}
 
+
+
+///// tire suas duvidas
 
 function showContente(id) {
   const content = document.getElementById(id);
@@ -56,6 +59,8 @@ function showContente(id) {
 }
 
 
+/// direcionamento div
+
 function scrollToSection(id) {
   const element = document.getElementById(id);
   if (element) {
@@ -63,4 +68,35 @@ function scrollToSection(id) {
   }
 }
 
+/// pc
+const contButton = document.getElementById('aceconst')
 
+contButton.addEventListener('click', () => {
+  document.body.classList.toggle('contrast');
+
+
+  if(document.body.classList.contains('contrast')){
+    contrastIcon.src = '<img src="/imagem/Acessibilidade-gRANDE-300x300.png/>'
+  } else {
+    contrastIcon.src = '<img src="/imagem/Acessibilidade-gRANDE-300x300.png/>'
+  }
+
+})
+
+
+
+
+// mobile
+const conteButton = document.getElementById('aceconsta')
+
+conteButton.addEventListener('click', () => {
+  document.body.classList.toggle('contrast');
+
+
+  if(document.body.classList.contains('contrast')){
+    contrastIcon.src = '<img src="/imagem/Acessibilidade-gRANDE-300x300.png/>'
+  } else {
+    contrastIcon.src = '<img src="/imagem/Acessibilidade-gRANDE-300x300.png/>'
+  }
+
+})
