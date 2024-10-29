@@ -105,6 +105,17 @@ ul li a:hover {
 }
 
 
+.acessibilidade{
+  width: 100px;
+  border: none;
+  background: #ec1c24;
+  border-radius: 10px;
+  color: white;
+  margin-top: -10px;
+  margin-left: 50px;
+  
+}
+
 
 .banner {
   position: relative;
@@ -442,14 +453,16 @@ h6 {
   width: 45px;
   height: 45px;
   border: none;
+  top: 700px;
   border-radius: 50%;
   cursor: pointer;
-  position: relative;
+  position: fixed; /* Isso mantém o botão fixo em relação à tela */
+  bottom: 20px; /* Ajusta a posição do botão a partir da parte inferior da tela */
+  left: 20px; /* Ajusta a posição do botão a partir da borda esquerda */
   overflow: hidden;
   transition-duration: 0.3s;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
   background-color: #00d757;
-  left: 5px;
 }
 
 .sign {
@@ -467,6 +480,7 @@ h6 {
 .sign svg path {
   fill: white;
 }
+
 .text {
   position: absolute;
   right: 0%;
@@ -486,16 +500,15 @@ h6 {
 
 .Btn:hover .sign {
   width: 30%;
-  transition-duration: 0.3s;
   padding-left: 10px;
 }
 
 .Btn:hover .text {
   opacity: 1;
   width: 70%;
-  transition-duration: 0.3s;
   padding-right: 10px;
 }
+
 .Btn:active {
   transform: translate(2px, 2px);
 }
@@ -569,6 +582,89 @@ footer{
   width: 10%;
   height: 20%;
 }
+
+.form-box {
+  max-width: 300px;
+  background: #ffffff;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #010101;
+  border: solid 3px #b91004;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  gap: 16px;
+  text-align: center;
+}
+
+.title {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #666;
+}
+
+.form-container {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #fff;
+  margin: 1rem 0 .5rem;
+  width: 100%;
+}
+
+.input {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  font-size: .9rem;
+  padding: 8px 15px;
+}
+
+.form-section {
+  padding: 16px;
+  font-size: .85rem;
+  background-color: #e0ecfb;
+  box-shadow: rgb(0 0 0 / 8%) 0 -1px;
+}
+
+.form-section a {
+  font-weight: bold;
+  color: #b91004;
+  transition: color .3s ease;
+}
+
+.form-section a:hover {
+  color: #b91004;
+  text-decoration: underline;
+}
+
+.form button {
+  background-color: #b91004;
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color .3s ease;
+}
+
+.form button:hover {
+  background-color: #b91004;
+}
+
 
 @media screen and (max-width: 500px) {
 
@@ -787,6 +883,11 @@ footer{
     transition: transform 0.3s;
 }
 
+
+
+.acessibilidade{
+  width: 20%;
+}
 
 }
 
