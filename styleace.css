@@ -1,0 +1,40 @@
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000;
+    --highlight-color: #007bff;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  button {
+    background-color: var(--highlight-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  body.contrast {
+    --bg-color: #000;
+    --text-color: #fff;
+    --highlight-color: #ffffff;
+  }
+  
+  body.contrast {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  body.contrast button {
+    background-color: var(--highlight-color);
+    color: var(--bg-color);
+  }
+
+
+
+
+  
