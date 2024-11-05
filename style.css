@@ -373,7 +373,7 @@ h5 {
 }
 
 .ativos, .credi, .credipar, .stone, .div, .tenda, .direcional, .zema, .berlanda, .berlanda, .zema, .tenda, .direcional, .bradesco  {
-  display: flex;
+  display: flex; 
   justify-content: center;
   align-items: center; 
   border: solid 3px white;
@@ -666,7 +666,7 @@ footer{
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
 
   body {
     overflow-x: hidden;
@@ -675,6 +675,10 @@ footer{
 
   #desktop {
     display: none; 
+}
+
+.titulo{
+  margin-top: -40px;
 }
 
   .logo1{
@@ -1551,11 +1555,13 @@ footer{
     align-items: center;
     border: solid 3px white;
     width: calc(30% - 10px);
-    height: 170px;
+    height: 150px;
     background: white;
     border-radius: 20px;
     transition: transform 0.3s;
 }
+
+
 
 #caixa-pt{
   align-items: center;
@@ -1565,15 +1571,16 @@ footer{
 
 .img2{
   margin-left:-20px;
-  width: 65%;
+  width: 35%;
 }
  
 .img3{
-  width: 59%;
+  width: 35%;
 }
 
 #caixa-pr{
   display: flex;
+  width: auto;
   border-radius: 20px;
   margin-top: 200px;
   /* background: #d60e0e; */
@@ -1593,6 +1600,17 @@ footer{
   width:80%;
   transform: translateX(750px);
  }
+
+
+.img1{
+  width: 80%;
+}
+
+
+.img10{
+  width: 27%;
+  margin-left: 300px;
+}
 
 }
 
@@ -1828,8 +1846,9 @@ footer{
   border-radius: 30px;
   margin-top: 200px;
   background: linear-gradient(to top, #500606 10%, #7e0404 50%, #7e0404 90%);
-  height: 50vh;
-  justify-content: flex-start;
+  height: 130vh;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .ca-ti{
@@ -1840,22 +1859,10 @@ footer{
 }
 
 .button-caixa{
-  width: 20%;
-  background: #ec1c24;
-  color: white;
-  font-size: 30px;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 25px;
-  border: none;
-  padding: 10px;
-  margin: 10px; 
-  box-shadow: 2px 2px 4px #b91004, -2px -2px 4px #b91004;
-  height: 80px;
-  margin-left: -700px;
-  transform: translateY(380px);
-}
+  font-size: 28px;
+  width:80%;
+  transform: translateX(750px);
+ }
 
 
 .img10{
@@ -1875,11 +1882,36 @@ footer{
   }
 
   #cx {
-    margin-top: 130px;
+    margin-top: 300px;
   }
 
   #dek {
     font-size: 40px;
   }
+
+  #caixa{ 
+    margin-top: -280px;
+  }
+
+  .container-car {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ativos, .credi, .credipar, .stone, .div, .tenda, .direcional, .zema, .berlanda, .bradesco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px white;
+    width: calc(20% - 10px);
+    height: 180px;
+    background: white;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+
 
 }
