@@ -891,8 +891,476 @@ footer{
 
 }
 
-@media screen and (min-width: 501px) and (max-width: 1024px) {
+@media screen and (min-width: 501px) and (max-width: 649px) {
   
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  #desktop {
+    display: none; 
+}
+
+  .logo1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 350px;
+    transform: translateY(30px);
+
+  }
+
+  .banner {
+    display: flex;
+    width: 875px; 
+    height: 80vh;
+    background-size: 100% 100%;
+    background-position: center 18vh;
+    background-image: url('./imagem/aaaaa.png'); 
+    translate: -700px;
+  }
+     
+   .banner .ti span{
+    color: rgb(255, 255, 255);
+    background: #e43003;
+    border-radius: 5px;
+   }
+
+  .banner .ti {
+    margin-top: 100px;
+    font-family: sans-serif;
+    font-size: 35px;
+  }
+
+  .titulo{
+    margin-left: 20%;
+  }
+  
+  #cx {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    transform: none;
+    box-shadow: 2px 2px 4px #9e9d9d, -2px -2px 4px #9e9d9d;
+  }
+
+  #pt2 {
+    display: flex;
+    width: 90%;
+    height: 950px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #bloco1, #bloco2, #bloco3 {
+    width: 50%;
+  }
+
+
+
+  #menu-toggle {
+    display: block;
+    cursor: pointer;
+    background-color: #e43003;
+    color: white;
+    padding: 10px;
+    height: 30px;
+    top: -10px;
+    border-radius: 5px;
+    font-size: 24px; 
+    position: relative;
+    z-index: 1000;
+  }
+  
+  #barra {
+    position: absolute;
+    top: 20px;
+    left: 26%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 25px;
+    padding: 5px 30px;
+    transform: translateX(-52%);
+    color: white;
+    background: #e43003;
+    display: flex;
+    gap: 30px;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    width: 0; 
+    overflow: hidden; 
+    transition: width 0.3s ease; 
+  }
+  
+  #barra a {
+    display: none; 
+    padding: 10px 0;
+  }
+  
+  #barra.show-menu {
+    width: 210px;
+    top: -3px;
+    min-height: 95vh;
+  }
+  
+  #barra.show-menu a {
+    display: block; 
+    height: 50px;
+  }
+  
+
+  #button {
+    text-align: center;
+    margin-top: 225px;
+  }
+
+
+  h5 {
+    margin-top: -80px;
+    font-size: 25px;
+  }
+
+  .slide-container img {
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+  }
+  
+  h6{
+    transform: translateY(-600px);
+    margin-top: 400px;
+  }
+
+  .button-pt{
+    width: 85%;
+  }
+ 
+  #caixa-pr{
+    display: flex;
+    border-radius: 20px;
+    margin-top: 200px;
+    /* background: #d60e0e; */
+    height: 100vh;
+    flex-direction: column;
+  }
+  
+
+
+  .ca-ti{
+    color: #ffffff;
+    padding: 40px;
+    font-size: 25px;
+    font-family: sans-serif;
+  }
+  
+  
+ 
+   .button-caixa{
+    font-size: 28px;
+    width:80%;
+    transform: translateX(750px);
+   }
+
+  #caixa-pt{
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .img2{
+    margin-left:-20px;
+    width: 65%;
+  }
+   
+  .img3{
+    width: 59%;
+  }
+
+  .img10{
+    width: 30%;
+    height: 20%;
+    margin-left: 200px;
+  }
+   
+
+  #par-btn {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px;
+    width: auto;
+    padding: 20px;
+}
+
+.container-car {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ativos, .credi, .credipar, .stone, .div, .tenda, .direcional, .zema, .berlanda, .bradesco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px white;
+    width: calc(40% - 10px);
+    height: 150px;
+    background: white;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+
+
+.acessibilidade{
+  width: 20%;
+}
+
+
+
+}
+
+
+@media screen and (min-width: 650px) and (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  #desktop {
+    display: none; 
+}
+
+  .logo1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 500px;
+    transform: translateY(30px);
+
+  }
+
+  .banner {
+    display: flex;
+    width: 875px; 
+    height: 80vh;
+    background-size: 100% 100%;
+    background-position: center 18vh;
+    background-image: url('./imagem/aaaaa.png'); 
+    translate: -700px;
+  }
+     
+   .banner .ti span{
+    color: rgb(255, 255, 255);
+    background: #e43003;
+    border-radius: 5px;
+   }
+
+  .banner .ti {
+    margin-top: 100px;
+    font-family: sans-serif;
+    font-size: 35px;
+  }
+
+  .titulo{
+    margin-left: 25%;
+  }
+  
+  #cx {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 100px;
+    transform: none;
+    box-shadow: 2px 2px 4px #9e9d9d, -2px -2px 4px #9e9d9d;
+  }
+
+  #pt2 {
+    display: flex;
+    width: 90%;
+    height: 950px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #bloco1, #bloco2, #bloco3 {
+    width: 50%;
+  }
+
+
+
+  #menu-toggle {
+    display: block;
+    cursor: pointer;
+    background-color: #e43003;
+    color: white;
+    padding: 10px;
+    height: 30px;
+    top: -10px;
+    border-radius: 5px;
+    font-size: 24px; 
+    position: relative;
+    z-index: 1000;
+  }
+  
+  #barra {
+    position: absolute;
+    top: 20px;
+    left: 26%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 25px;
+    padding: 5px 30px;
+    transform: translateX(-52%);
+    color: white;
+    background: #e43003;
+    display: flex;
+    gap: 30px;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    z-index: 3;
+    width: 0; 
+    overflow: hidden; 
+    transition: width 0.3s ease; 
+  }
+  
+  #barra a {
+    display: none; 
+    padding: 10px 0;
+  }
+  
+  #barra.show-menu {
+    width: 210px;
+    top: -3px;
+    min-height: 95vh;
+  }
+  
+  #barra.show-menu a {
+    display: block; 
+    height: 50px;
+  }
+  
+
+  #button {
+    text-align: center;
+    margin-top: 225px;
+  }
+
+
+  h5 {
+    margin-top: -80px;
+    font-size: 25px;
+  }
+
+  .slide-container img {
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+  }
+  
+  h6{
+    transform: translateY(-600px);
+    margin-top: 400px;
+  }
+
+  .button-pt{
+    width: 85%;
+  }
+ 
+  #caixa-pr{
+    display: flex;
+    border-radius: 20px;
+    margin-top: 200px;
+    /* background: #d60e0e; */
+    height: 120vh;
+    flex-direction: column;
+  }
+  
+
+
+  .ca-ti{
+    color: #ffffff;
+    padding: 40px;
+    font-size: 25px;
+    font-family: sans-serif;
+  }
+  
+  
+ 
+   .button-caixa{
+    font-size: 28px;
+    width:80%;
+    transform: translateX(750px);
+   }
+
+  #caixa-pt{
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .img2{
+    margin-left:-20px;
+    width: 65%;
+  }
+   
+  .img3{
+    width: 59%;
+  }
+
+  .img10{
+    width: 30%;
+    height: 25%;
+    margin-left: 260px;
+  }
+   
+
+  #par-btn {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px;
+    width: auto;
+    padding: 20px;
+}
+
+.container-car {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ativos, .credi, .credipar, .stone, .div, .tenda, .direcional, .zema, .berlanda, .bradesco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px white;
+    width: calc(35% - 10px);
+    height: 150px;
+    background: white;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+
+
+.acessibilidade{
+  width: 20%;
+}
+
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+
   .logo1{
     display: none;
   }
@@ -900,7 +1368,6 @@ footer{
     display: none;
   }
   
-
   body {
     overflow-x: hidden;
     width: 100%;
@@ -915,14 +1382,27 @@ footer{
 }
   .banner {
     display: flex;
+    justify-content: center;
     width: 875px; 
     height: 80vh;
     background-size: 100% 100%;
-    background-position: center 18vh;
-    background-image: url('./imagem/aaaaa.png'); 
-    translate: -775px;
+    background-position: center 18vh; 
+    /* background-image: url('./imagem/aaaaa.png'); */
+    /* translate: -600px; */
+  }
+
+
+  .banner {
+    background-image: url('./imagem/aaaaa.png');
+    margin-left: -50px;
+
   }
      
+ 
+  .titulo{
+    margin-top: -300px;
+  }
+
    .banner .ti span{
     color: rgb(255, 255, 255);
     background: #e43003;
@@ -938,7 +1418,7 @@ footer{
   #cx {
     width: 90%;
     margin: 0 auto;
-    margin-top: 100px;
+    margin-top: 300px;
     transform: none;
     box-shadow: 2px 2px 4px #9e9d9d, -2px -2px 4px #9e9d9d;
   }
@@ -951,6 +1431,11 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+  }
+
+
+  h6{
+    margin-top: -100px;
   }
 
   #bloco1, #bloco2, #bloco3 {
@@ -1041,35 +1526,337 @@ footer{
     width: 100%;
   }
   
+
+  .img10{
+    width: 27%;
+    height: 27%;
+    margin-left: 350px;
+  }
  
+  .button-pt{
+    width: 80%;
+  }
+
+
+  .container-car {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 2500px) {
+.ativos, .credi, .credipar, .stone, .div, .tenda, .direcional, .zema, .berlanda, .bradesco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px white;
+    width: calc(30% - 10px);
+    height: 170px;
+    background: white;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+#caixa-pt{
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+
+.img2{
+  margin-left:-20px;
+  width: 65%;
+}
+ 
+.img3{
+  width: 59%;
+}
 
 
-  #cx{
-     margin-top: -140px;
-  }
+#caixa-pr{
+  display: flex;
+  border-radius: 20px;
+  margin-top: 200px;
+  /* background: #d60e0e; */
+  height: 150vh;
+  flex-direction: column;
+}
+
+.ca-ti{
+  color: #ffffff;
+  padding: 40px;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+.button-caixa{
+  font-size: 28px;
+  width:80%;
+  transform: translateX(750px);
+ }
+
+}
 
 
-  #menu-toggle{
-     display: none;
-  }
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+
 
   .logo1{
     display: none;
   }
-
   #barra{
     display: none;
   }
-
-
-  #dek{
-    font-size: 40px;
+  
+  body {
+    overflow-x: hidden;
+    width: 100%;
   }
+   
+  #desktop {
+    display: flex;
+}
+
+#barra {
+    display: none; 
+}
+  .banner {
+    display: flex;
+    justify-content: center;
+    width: 875px; 
+    height: 80vh;
+    background-size: 100% 100%;
+    background-position: center 18vh; 
+    /* background-image: url('./imagem/aaaaa.png'); */
+    /* translate: -600px; */
+  }
+
+
+  .banner {
+    background-image: url('./imagem/aaaaa.png');
+    margin-left: -50px;
+
+  }
+     
+ 
+  .titulo{
+    margin-top: -300px;
+  }
+
+   .banner .ti span{
+    color: rgb(255, 255, 255);
+    background: #e43003;
+    border-radius: 5px;
+   }
+
+  .banner .ti {
+    margin-top: 100px;
+    font-family: sans-serif;
+    font-size: 35px;
+  }
+
+  
+  #cx {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 300px;
+    transform: none;
+    box-shadow: 2px 2px 4px #9e9d9d, -2px -2px 4px #9e9d9d;
+  }
+
+  #pt2 {
+    display: flex;
+    width: 90%;
+    height: 1000px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+
+  h6{
+    margin-top: -100px;
+  }
+
+  #bloco1, #bloco2, #bloco3 {
+    width: 50%;
+  }
+
+  nav.mobile-nav {
+    display: none;
+  }
+  
+  nav.desktop-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav.desktop-nav.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  ul li {
+    margin-left: 30px;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #333;
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+  }
+  
+  ul li a:hover::after {
+    width: 100%;
+  }
+  
+  ul li a:hover {
+    color: #000;
+  }
+   
+  #button {
+    text-align: center;
+    margin-top: 225px;
+  }
+
+  h5 {
+    margin-top: -80px;
+    font-size: 25px;
+  }
+
+  .slide-container img {
+    border: none;
+    border-radius: 50px;
+    width: 100%;
+  }
+  
+
+  .img10{
+    width: 27%;
+    height: 27%;
+    margin-left: 350px;
+  }
+ 
+  .button-pt{
+    width: 80%;
+  }
+
+
+  .container-car {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ativos, .credi, .credipar, .stone, .div, .tenda, .direcional, .zema, .berlanda, .bradesco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px white;
+    width: calc(25% - 10px);
+    height: 170px;
+    background: white;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+#caixa-pt{
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+
+
+.img1{
+  width: 60%;
+}
+
+.img2{
+  margin-left:-20px;
+  width: 35%;
+}
+ 
+.img3{
+  width: 40%;
+}
+
+
+#caixa-pr{
+  display: flex;
+  border-radius: 20px;
+  margin-top: 200px;
+  /* background: #d60e0e; */
+  height: 150vh;
+  flex-direction: column;
+}
+
+.ca-ti{
+  color: #ffffff;
+  padding: 40px;
+  font-size: 25px;
+  font-family: sans-serif;
+}
+
+.button-caixa{
+  font-size: 28px;
+  width:80%;
+  transform: translateX(750px);
+ }
 
 }
 
 
+@media screen and (min-width: 1441px) and (max-width: 2500px) {
 
+
+  .logo1, #barra {
+    display: none;
+  }
+
+  #cx {
+    margin-top: 130px;
+  }
+
+  #dek {
+    font-size: 40px;
+  }
+
+}
