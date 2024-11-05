@@ -1572,17 +1572,16 @@ footer{
   width: 59%;
 }
 
-
 #caixa-pr{
   display: flex;
   border-radius: 20px;
   margin-top: 200px;
   /* background: #d60e0e; */
-  height: 150vh;
+  height: 120vh;
   flex-direction: column;
 }
 
-.ca-ti{
+ .ca-ti{
   color: #ffffff;
   padding: 40px;
   font-size: 25px;
@@ -1779,7 +1778,16 @@ footer{
   }
 
 
-  .container-car {
+  #par-btn {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px;
+    width: auto;
+    padding: 20px;
+}
+
+.container-car {
     display: flex;
     flex-direction: row; 
     flex-wrap: wrap;
@@ -1791,23 +1799,19 @@ footer{
     justify-content: center;
     align-items: center;
     border: solid 3px white;
-    width: calc(25% - 10px);
-    height: 170px;
+    width: calc(20% - 10px);
+    height: 150px;
     background: white;
     border-radius: 20px;
     transition: transform 0.3s;
 }
 
-#caixa-pt{
-  align-items: center;
-  flex-direction: column;
-  height: auto;
-}
 
 
+/* 
 .img1{
   width: 60%;
-}
+} */
 
 .img2{
   margin-left:-20px;
@@ -1821,11 +1825,11 @@ footer{
 
 #caixa-pr{
   display: flex;
-  border-radius: 20px;
+  border-radius: 30px;
   margin-top: 200px;
-  /* background: #d60e0e; */
-  height: 150vh;
-  flex-direction: column;
+  background: linear-gradient(to top, #500606 10%, #7e0404 50%, #7e0404 90%);
+  height: 50vh;
+  justify-content: flex-start;
 }
 
 .ca-ti{
@@ -1836,10 +1840,29 @@ footer{
 }
 
 .button-caixa{
-  font-size: 28px;
-  width:80%;
-  transform: translateX(750px);
- }
+  width: 20%;
+  background: #ec1c24;
+  color: white;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  border: none;
+  padding: 10px;
+  margin: 10px; 
+  box-shadow: 2px 2px 4px #b91004, -2px -2px 4px #b91004;
+  height: 80px;
+  margin-left: -700px;
+  transform: translateY(380px);
+}
+
+
+.img10{
+  width: 15%;
+  height: 15%;
+  margin-left: 590px;
+}
 
 }
 
