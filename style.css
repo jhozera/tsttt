@@ -567,14 +567,47 @@ h6 {
 }
 
 
-footer{
+.footer {
+  background-color: #811704;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-text {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  background: #f2f2f2;
-  height: 50vh;
-  gap: 20px;
+  align-items: center;
+  gap: 15px;
 }
+
+.footer-title {
+  font-size: 2.5em;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-info {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.footer-rights {
+  margin-top: 30px;
+  font-size: 1em;
+  font-weight: 400;
+  color: #bdc3c7;
+}
+
 
 .img10{
   margin-left: 950px;
@@ -853,6 +886,7 @@ footer{
   }
 
   .img10{
+    position: fixed;
     width: 30%;
     height: 15%;
     margin-left: 145px;
@@ -1579,14 +1613,25 @@ footer{
 }
 
 #caixa-pr{
+  flex-direction: column;
+  height: 110vh;
+}
+
+
+.img1{
+  width: 45%;
+ }
+
+
+ /* #caixa-pr{
   display: flex;
   width: auto;
   border-radius: 20px;
   margin-top: 200px;
-  /* background: #d60e0e; */
+  background: #d60e0e; 
   height: 120vh;
   flex-direction: column;
-}
+}  */
 
  .ca-ti{
   color: #ffffff;
@@ -1674,11 +1719,11 @@ footer{
 
   
   #cx {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 300px;
+    position: fixed;
+    top: 300px; 
+    left: 700px; 
     transform: none;
-    box-shadow: 2px 2px 4px #9e9d9d, -2px -2px 4px #9e9d9d;
+    margin-left: 0; 
   }
 
   #pt2 {
@@ -1842,14 +1887,18 @@ footer{
 
 
 #caixa-pr{
+  justify-content: flex-start;
+}
+
+/* #caixa-pr{
   display: flex;
   border-radius: 30px;
   margin-top: 200px;
   background: linear-gradient(to top, #500606 10%, #7e0404 50%, #7e0404 90%);
-  height: 130vh;
+  height: 140vh;
   justify-content: center;
   flex-direction: column;
-}
+} */
 
 .ca-ti{
   color: #ffffff;
@@ -1860,10 +1909,15 @@ footer{
 
 .button-caixa{
   font-size: 28px;
-  width:80%;
-  transform: translateX(750px);
+  width:auto;
+  transform: translateX(50px);
+  margin-top: 400px;
  }
 
+
+ .img1{
+  width: 45%;
+ }
 
 .img10{
   width: 15%;
@@ -1882,7 +1936,11 @@ footer{
   }
 
   #cx {
-    margin-top: 300px;
+    position: fixed;
+    top: 350px; 
+    left: 220px; 
+    transform: none;
+    margin-left: 0; 
   }
 
   #dek {
@@ -1891,6 +1949,11 @@ footer{
 
   #caixa{ 
     margin-top: -280px;
+  }
+
+
+  #button{
+    margin-top: 500px;
   }
 
   .container-car {
@@ -1905,12 +1968,18 @@ footer{
     justify-content: center;
     align-items: center;
     border: solid 3px white;
-    width: calc(20% - 10px);
+    width: calc(18% - 10px);
     height: 180px;
     background: white;
     border-radius: 20px;
     transition: transform 0.3s;
 }
+
+#bloco1, #bloco2, #bloco3{
+  height: 300px;
+}
+
+
 
 
 
