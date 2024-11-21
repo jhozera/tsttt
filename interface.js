@@ -22,7 +22,7 @@ window.addEventListener('scroll', () => {
 
 
 
-
+// caixa perguntas
 function showContent(contentID) {
   const sections = document.querySelectorAll('.form-container');
   const carteirasDiv = document.getElementById('form-box');
@@ -100,3 +100,16 @@ conteButton.addEventListener('click', () => {
   }
 
 })
+
+
+
+// model atualiza 
+function openModal(event) {
+  event.preventDefault(); // Evita o comportamento padrão do link
+  document.getElementById('modal-overlay').style.display = 'flex';
+}
+
+// Função para fechar o modal
+function closeModal() {
+  document.getElementById('modal-overlay').style.display = 'none';
+}
