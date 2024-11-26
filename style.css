@@ -338,6 +338,7 @@ h5 {
 #menu-toggle {
   display: none;
   cursor: pointer;
+  
 }
 
 #barra a {
@@ -808,7 +809,7 @@ h6 {
   #menu-toggle {
     display: block;
     cursor: pointer;
-    background-color: #e43003;
+    /* background-color: #e43003; */
     color: white;
     padding: 10px;
     height: 30px;
@@ -817,6 +818,7 @@ h6 {
     font-size: 24px; 
     position: relative;
     z-index: 1000;
+    
   }
   
   #barra {
@@ -838,6 +840,8 @@ h6 {
     width: 0; 
     overflow: hidden; 
     transition: width 0.3s ease; 
+    
+    
   }
   
   #barra a {
@@ -888,7 +892,7 @@ h6 {
     border-radius: 20px;
     margin-top: 200px;
     /* background: #d60e0e; */
-    height: 100vh;
+    height: 120vh;
     flex-direction: column;
   }
   
@@ -967,7 +971,7 @@ h6 {
 }
 
 #carteiras{
-  height: 125vh;
+  height: 130vh;
 }
 
 
@@ -1126,7 +1130,7 @@ h6 {
     border-radius: 20px;
     margin-top: 200px;
     /* background: #d60e0e; */
-    height: 100vh;
+    height: 120vh;
     flex-direction: column;
   }
   
@@ -1204,7 +1208,7 @@ h6 {
 }
 
 #carteiras{
-  height: 125vh;
+  height: 135vh;
 }
 
 }
@@ -1362,7 +1366,7 @@ h6 {
     border-radius: 20px;
     margin-top: 200px;
     /* background: #d60e0e; */
-    height: 120vh;
+    height: 135vh;
     flex-direction: column;
   }
   
@@ -1440,7 +1444,7 @@ h6 {
 }
 
 #carteiras{
-  height: 125vh;
+  height: 140vh;
 }
 
 }
@@ -1664,7 +1668,7 @@ h6 {
 
 #caixa-pr{
   flex-direction: column;
-  height: 110vh;
+  height: 135vh;
 }
 
 
@@ -1708,7 +1712,7 @@ h6 {
 }
 
 #carteiras{
-  height: 125vh;
+  height: 145vh;
 }
 
 
@@ -1983,7 +1987,7 @@ h6 {
 
 
 #carteiras{
-  height: 125vh;
+  height: 150vh;
 }
 
 }
